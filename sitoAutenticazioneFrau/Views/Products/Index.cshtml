@@ -1,0 +1,48 @@
+﻿@model IEnumerable<sitoAutenticazioneFrau.Models.Product>
+@{
+    ViewData["Title"] = "Prodotti";
+}
+
+<h2>Prodotti</h2>
+
+<div class="row">
+    @foreach (var product in Model)
+    {
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">@product.Name</h5>
+                    <p class="card-text">@product.Description</p>
+                    <p class="card-text"><strong>@product.Price.ToString("C")</strong></p>
+                    <form asp-controller="Products" asp-action="AddToCart" method="post">                     
+                        <button type="submit" class="btn btn-primary">Aggiungi al carrello</button>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+<script>
+    $(document).ready(function() {
+        $('.add-to-cart-form').submit(function(e) {
+            e.preventDefault(); // blocca submit normale
+
+            var form = $(this);
+            var productId = form.data('product-id');
+
+            $.post('/Products/AddToCart', { productId: productId })
+                .done(function() {
+                    // aggiorna contatore
+                    $.get('/Cart/GetCartCount')
+                        .done(function(count) {
+                            $('#cart-count').text(count);
+                        });
+                });
+        });
+    });
+</script>
+

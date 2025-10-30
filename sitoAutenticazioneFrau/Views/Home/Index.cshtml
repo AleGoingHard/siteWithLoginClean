@@ -1,0 +1,157 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="homepage-container">
+    <div class="hero-section">
+        <h1>Eleganza Senza Tempo</h1>
+        <p class="subtitle">La tua destinazione per l'abbigliamento raffinato</p>
+    </div>
+
+    <div class="content-section">
+        <div class="intro-text">
+            <p>
+                Benvenuto nel nostro mondo di stile ed eleganza. Qui troverai una selezione curata
+                di capi che incarnano la qualità e il design italiano. Dalle camicie sartoriali alle
+                polo classiche, ogni pezzo è scelto per valorizzare il tuo guardaroba.
+            </p>
+        </div>
+
+        <div class="features">
+            <div class="feature-box">
+                <h3>Qualità Superiore</h3>
+                <p>Tessuti pregiati e lavorazioni artigianali per capi che durano nel tempo.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>Stile Raffinato</h3>
+                <p>Un'attenta selezione di modelli classici e contemporanei per ogni occasione.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>Vestibilità Perfetta</h3>
+                <p>Taglie pensate per garantire comfort e una silhouette impeccabile.</p>
+            </div>
+        </div>
+
+        <div class="closing-text">
+            <p>
+                Ogni capo racconta una storia di passione per il dettaglio e amore per la moda autentica.
+                Che tu stia cercando l'outfit perfetto per un evento importante o desideri rinnovare
+                il tuo stile quotidiano, qui troverai ciò che fa per te.
+            </p>
+        </div>
+    </div>
+</div>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+    }
+
+    .homepage-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+
+    .hero-section {
+        text-align: center;
+        padding: 60px 20px;
+        background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+        color: white;
+        border-radius: 8px;
+        margin-bottom: 50px;
+    }
+
+        .hero-section h1 {
+            font-size: 2.8em;
+            margin-bottom: 15px;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+    .subtitle {
+        font-size: 1.2em;
+        font-weight: 300;
+        opacity: 0.9;
+    }
+
+    .content-section {
+        padding: 0 20px;
+    }
+
+    .intro-text {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+        .intro-text p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #555;
+        }
+
+    .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .feature-box {
+        padding: 30px;
+        background: #f8f9fa;
+        border-left: 4px solid #2c3e50;
+        transition: transform 0.3s ease;
+    }
+
+        .feature-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-box h3 {
+            color: #2c3e50;
+            margin-bottom: 12px;
+            font-size: 1.3em;
+        }
+
+        .feature-box p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+    .closing-text {
+        text-align: center;
+        padding: 30px;
+        background: #f8f9fa;
+        border-radius: 8px;
+    }
+
+        .closing-text p {
+            font-size: 1.05em;
+            line-height: 1.8;
+            color: #555;
+        }
+
+    @@media (max-width: 768px) {
+        .hero-section h1
+
+    {
+        font-size: 2em;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    }
+</style>

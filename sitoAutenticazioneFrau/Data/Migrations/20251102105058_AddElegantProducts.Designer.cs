@@ -11,8 +11,8 @@ using sitoAutenticazioneFrau.Data;
 namespace sitoAutenticazioneFrau.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20251102102920_UpdateProductSeed")]
-    partial class UpdateProductSeed
+    [Migration("20251102105058_AddElegantProducts")]
+    partial class AddElegantProducts
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

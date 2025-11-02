@@ -3,23 +3,184 @@
     ViewData["Title"] = "Prodotti";
 }
 
-<h2>Prodotti</h2>
+<style>
+    .products-header {
+        text-align: center;
+        margin: 3rem 0;
+        position: relative;
+    }
 
-<div class="row">
+    .products-header h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 0.5rem;
+    }
+
+    .products-header::after {
+        content: '';
+        display: block;
+        width: 80px;
+        height: 4px;
+        background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        margin: 1rem auto;
+        border-radius: 2px;
+    }
+
+    .product-card {
+        border: none;
+        border-radius: 16px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+        height: 100%;
+        background: #fff;
+    }
+
+    .product-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .product-card .card-body {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .product-card .card-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 1rem;
+        min-height: 3rem;
+    }
+
+    .product-card .card-text {
+        color: #6c757d;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+        flex-grow: 1;
+    }
+
+    .product-price {
+        font-size: 1.75rem;
+        font-weight: 700;
+        background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn-add-cart {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border: none;
+        border-radius: 10px;
+        padding: 0.75rem 1.5rem;
+        font-weight: 600;
+        color: white;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .btn-add-cart:hover {
+        transform: scale(1.02);
+        box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+    }
+
+    .btn-add-cart:active {
+        transform: scale(0.98);
+    }
+
+    .btn-add-cart::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.3);
+        transform: translate(-50%, -50%);
+        transition: width 0.6s, height 0.6s;
+    }
+
+    .btn-add-cart:hover::before {
+        width: 300px;
+        height: 300px;
+    }
+
+    .btn-add-cart span {
+        position: relative;
+        z-index: 1;
+    }
+
+    .products-grid {
+        margin-bottom: 3rem;
+    }
+
+    .col-product {
+        margin-bottom: 2rem;
+    }
+
+    @@media (max-width: 768px) {
+        .products-header h2 {
+            font-size: 2rem;
+        }
+
+        .product-card .card-body {
+            padding: 1.5rem;
+        }
+    }
+
+    .loading-animation {
+        display: none;
+        width: 20px;
+        height: 20px;
+        border: 3px solid rgba(255, 255, 255, 0.3);
+        border-top-color: white;
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+        margin-left: 10px;
+    }
+
+    @@keyframes spin {
+        to { transform: rotate(360deg); }
+    }
+
+    .btn-add-cart.loading span {
+        opacity: 0.6;
+    }
+
+    .btn-add-cart.loading .loading-animation {
+        display: inline-block;
+    }
+</style>
+
+<div class="products-header">
+    <h2>I Nostri Prodotti</h2>
+</div>
+
+<div class="row products-grid">
     @foreach (var product in Model)
     {
-        <div class="col-md-4">
-            <div class="card mb-3">
+        <div class="col-md-4 col-product">
+            <div class="card product-card">
                 <div class="card-body">
                     <h5 class="card-title">@product.Name</h5>
                     <p class="card-text">@product.Description</p>
-                    <p class="card-text"><strong>@product.Price.ToString("C")</strong></p>
-
+                    <p class="card-text product-price">@product.Price.ToString("C")</p>
                     <form asp-controller="Cart" asp-action="AddToCart" method="post" class="add-to-cart-form" data-product-id="@product.Id">
                         @Html.AntiForgeryToken()
                         <input type="hidden" name="productId" value="@product.Id" />
                         <input type="hidden" name="quantity" value="1" />
-                        <button type="submit" class="btn btn-primary">Aggiungi al carrello</button>
+                        <button type="submit" class="btn btn-add-cart">
+                            <span>Aggiungi al carrello</span>
+                            <div class="loading-animation"></div>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -28,23 +189,29 @@
 </div>
 
 <script>
-    $(document).ready(function() {
-        $('.add-to-cart-form').submit(function(e) {
-            e.preventDefault(); // Evita ricarica della pagina
-
+    $(document).ready(function () {
+        $('.add-to-cart-form').submit(function (e) {
+            e.preventDefault();
             var form = $(this);
             var productId = form.data('product-id');
+            var button = form.find('button');
+
+            // Aggiungi animazione di caricamento
+            button.addClass('loading').prop('disabled', true);
 
             $.post('/Cart/AddToCart', { productId: productId, quantity: 1 })
-                .done(function() {
-                    // Aggiorna il contatore carrello se esiste
+                .done(function () {
                     $.get('/Cart/GetCartCount')
-                        .done(function(count) {
+                        .done(function (count) {
                             $('#cart-count').text(count);
                         });
                 })
-                .fail(function() {
+                .fail(function () {
                     alert("Errore durante l'aggiunta al carrello.");
+                })
+                .always(function () {
+                    // Rimuovi animazione di caricamento
+                    button.removeClass('loading').prop('disabled', false);
                 });
         });
     });

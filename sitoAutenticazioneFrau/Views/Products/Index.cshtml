@@ -42,14 +42,44 @@
         box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
     }
 
-    .product-card .card-body {
+    .product-image-container {
+        width: 100%;
+        height: 280px;
+        overflow: hidden;
+        background: #f8f9fa;
+        position: relative;
+    }
+
+    .product-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .product-card:hover .product-image {
+        transform: scale(1.08);
+    }
+
+    .product-image-placeholder {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        font-size: 3rem;
+    }
+
+    .card-body {
         padding: 2rem;
         display: flex;
         flex-direction: column;
         height: 100%;
     }
 
-    .product-card .card-title {
+    .card-title {
         font-size: 1.5rem;
         font-weight: 600;
         color: #2c3e50;
@@ -57,7 +87,7 @@
         min-height: 3rem;
     }
 
-    .product-card .card-text {
+    .card-text {
         color: #6c757d;
         line-height: 1.6;
         margin-bottom: 1rem;
@@ -131,8 +161,12 @@
             font-size: 2rem;
         }
 
-        .product-card .card-body {
+        .card-body {
             padding: 1.5rem;
+        }
+
+        .product-image-container {
+            height: 220px;
         }
     }
 
@@ -148,7 +182,9 @@
     }
 
     @@keyframes spin {
-        to { transform: rotate(360deg); }
+        to {
+            transform: rotate(360deg);
+        }
     }
 
     .btn-add-cart.loading span {
@@ -169,18 +205,46 @@
     {
         <div class="col-md-4 col-product">
             <div class="card product-card">
+                <div class="product-image-container">
+                    @if (!string.IsNullOrEmpty(product.ImageUrl))
+                    {
+                        <img src="@product.ImageUrl"
+                             alt="@product.Name"
+                             class="product-image"
+                             onerror="this.onerror=null; this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                        <div class="product-image-placeholder" style="display: none;">
+                            <i class="bi bi-bag"></i>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="product-image-placeholder">
+                            <i class="bi bi-bag"></i>
+                        </div>
+                    }
+                </div>
+
                 <div class="card-body">
                     <h5 class="card-title">@product.Name</h5>
                     <p class="card-text">@product.Description</p>
-                    <p class="card-text product-price">@product.Price.ToString("C")</p>
-                    <form asp-controller="Cart" asp-action="AddToCart" method="post" class="add-to-cart-form" data-product-id="@product.Id">
+                    <p class="product-price">@product.Price.ToString("C")</p>
+
+                    <form asp-controller="Cart"
+                          asp-action="AddToCart"
+                          method="post"
+                          class="add-to-cart-form"
+                          data-product-id="@product.Id">
+
                         @Html.AntiForgeryToken()
+
                         <input type="hidden" name="productId" value="@product.Id" />
                         <input type="hidden" name="quantity" value="1" />
+
                         <button type="submit" class="btn btn-add-cart">
                             <span>Aggiungi al carrello</span>
                             <div class="loading-animation"></div>
                         </button>
+
                     </form>
                 </div>
             </div>
@@ -192,11 +256,11 @@
     $(document).ready(function () {
         $('.add-to-cart-form').submit(function (e) {
             e.preventDefault();
+
             var form = $(this);
             var productId = form.data('product-id');
             var button = form.find('button');
 
-            // Aggiungi animazione di caricamento
             button.addClass('loading').prop('disabled', true);
 
             $.post('/Cart/AddToCart', { productId: productId, quantity: 1 })
@@ -210,7 +274,6 @@
                     alert("Errore durante l'aggiunta al carrello.");
                 })
                 .always(function () {
-                    // Rimuovi animazione di caricamento
                     button.removeClass('loading').prop('disabled', false);
                 });
         });

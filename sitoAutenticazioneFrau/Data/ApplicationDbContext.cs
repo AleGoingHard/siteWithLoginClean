@@ -12,13 +12,51 @@ namespace sitoAutenticazioneFrau.Data
         {
             base.OnModelCreating(builder);
 
-            builder.Entity<Product>().HasData(new Product
-            {
-                Id = 1,
-                Name = "Camicia Classica",
-                Description = "Camicia bianca elegante in cotone",
-                Price = 49.99M
-            });
+            builder.Entity<Product>().HasData(
+               new Product
+               {
+                   Id = 1,
+                   Name = "Camicia Classica",
+                   Description = "Camicia bianca elegante in cotone",
+                   Price = 49.99M
+               },
+               new Product
+               {
+                   Id = 2,
+                   Name = "Pantaloni Eleganti",
+                   Description = "Pantaloni classici neri in tessuto premium",
+                   Price = 79.90M
+               },
+               new Product
+               {
+                   Id = 3,
+                   Name = "Giacca Sartoriale",
+                   Description = "Giacca slim fit in lana, ideale per occasioni formali",
+                   Price = 149.00M
+               },
+               new Product
+               {
+                   Id = 4,
+                   Name = "Abito Completo",
+                   Description = "Abito blu navy in tessuto raffinato con chiusura a due bottoni",
+                   Price = 199.90M
+               },
+               new Product
+               {
+                   Id = 5,
+                   Name = "Cintura in Pelle",
+                   Description = "Cintura elegante in vera pelle italiana",
+                   Price = 39.50M
+               },
+               new Product
+               {
+                   Id = 6,
+                   Name = "Scarpe Oxford",
+                   Description = "Scarpe stringate eleganti in pelle lucida",
+                   Price = 129.90M
+               }
+           );
+
         }
 
 

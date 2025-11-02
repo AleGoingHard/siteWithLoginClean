@@ -1,4 +1,211 @@
-﻿<form asp-controller="Checkout" asp-action="CreateCheckoutSession" method="post">
-    @Html.AntiForgeryToken()
-    <button type="submit" class="btn btn-success">Procedi al pagamento</button>
-</form>
+﻿<style>
+    .checkout-section {
+        margin: 2rem 0;
+        padding: 2rem;
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        border-radius: 16px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .checkout-header {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .checkout-header h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 0.5rem;
+    }
+
+    .checkout-header p {
+        color: #6c757d;
+        font-size: 0.95rem;
+    }
+
+    .checkout-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .btn-checkout {
+        background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        border: none;
+        border-radius: 12px;
+        padding: 1rem 3rem;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: white;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .btn-checkout::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.3);
+        transform: translate(-50%, -50%);
+        transition: width 0.6s, height 0.6s;
+    }
+
+    .btn-checkout:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+    }
+
+    .btn-checkout:hover::before {
+        width: 400px;
+        height: 400px;
+    }
+
+    .btn-checkout:active {
+        transform: translateY(-1px);
+    }
+
+    .btn-checkout-content {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .btn-checkout-icon {
+        font-size: 1.3rem;
+        transition: transform 0.3s ease;
+    }
+
+    .btn-checkout:hover .btn-checkout-icon {
+        transform: translateX(5px);
+    }
+
+    .checkout-loading {
+        display: none;
+        width: 20px;
+        height: 20px;
+        border: 3px solid rgba(255, 255, 255, 0.3);
+        border-top-color: white;
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+    }
+
+    @@keyframes spin {
+        to { transform: rotate(360deg); }
+    }
+
+    .btn-checkout.loading .btn-checkout-text {
+        opacity: 0.6;
+    }
+
+    .btn-checkout.loading .checkout-loading {
+        display: inline-block;
+    }
+
+    .btn-checkout.loading .btn-checkout-icon {
+        display: none;
+    }
+
+    .security-badges {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 1.5rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid #dee2e6;
+    }
+
+    .security-badge {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: #6c757d;
+        font-size: 0.85rem;
+    }
+
+    .security-icon {
+        color: #10b981;
+        font-size: 1.2rem;
+    }
+
+    @@media (max-width: 768px) {
+        .checkout-section {
+            padding: 1.5rem;
+        }
+
+        .btn-checkout {
+            padding: 0.875rem 2rem;
+            font-size: 1rem;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .security-badges {
+            flex-direction: column;
+            gap: 1rem;
+        }
+    }
+</style>
+
+<div class="checkout-section">
+    <div class="checkout-header">
+        <h3>Completa il tuo ordine</h3>
+        <p>Pagamento sicuro e veloce con Stripe</p>
+    </div>
+
+    <form asp-controller="Checkout" asp-action="CreateCheckoutSession" method="post" class="checkout-form">
+        @Html.AntiForgeryToken()
+        <button type="submit" class="btn btn-checkout">
+            <span class="btn-checkout-content">
+                <span class="btn-checkout-text">Procedi al pagamento</span>
+                <span class="btn-checkout-icon">→</span>
+                <span class="checkout-loading"></span>
+            </span>
+        </button>
+    </form>
+
+    <div class="security-badges">
+        <div class="security-badge">
+            <span class="security-icon">🔒</span>
+            <span>Pagamento sicuro</span>
+        </div>
+        <div class="security-badge">
+            <span class="security-icon">✓</span>
+            <span>Transazione protetta</span>
+        </div>
+        <div class="security-badge">
+            <span class="security-icon">⚡</span>
+            <span>Checkout veloce</span>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('.checkout-form').submit(function() {
+            var button = $(this).find('.btn-checkout');
+            button.addClass('loading').prop('disabled', true);
+
+            // Se il submit fallisce, riabilita il pulsante dopo 3 secondi
+            setTimeout(function() {
+                if (button.hasClass('loading')) {
+                    button.removeClass('loading').prop('disabled', false);
+                }
+            }, 3000);
+        });
+    });
+</script>

@@ -14,35 +14,37 @@
                     <h5 class="card-title">@product.Name</h5>
                     <p class="card-text">@product.Description</p>
                     <p class="card-text"><strong>@product.Price.ToString("C")</strong></p>
-                    <form asp-controller="Products" asp-action="AddToCart" method="post">                     
+
+                    <form asp-controller="Cart" asp-action="AddToCart" method="post" class="add-to-cart-form" data-product-id="@product.Id">
+                        <input type="hidden" name="productId" value="@product.Id" />
+                        <input type="hidden" name="quantity" value="1" />
                         <button type="submit" class="btn btn-primary">Aggiungi al carrello</button>
                     </form>
-
-
                 </div>
             </div>
         </div>
     }
 </div>
 
-
 <script>
     $(document).ready(function() {
         $('.add-to-cart-form').submit(function(e) {
-            e.preventDefault(); // blocca submit normale
+            e.preventDefault(); // Evita ricarica della pagina
 
             var form = $(this);
             var productId = form.data('product-id');
 
-            $.post('/Products/AddToCart', { productId: productId })
+            $.post('/Cart/AddToCart', { productId: productId, quantity: 1 })
                 .done(function() {
-                    // aggiorna contatore
+                    // Aggiorna il contatore carrello se esiste
                     $.get('/Cart/GetCartCount')
                         .done(function(count) {
                             $('#cart-count').text(count);
                         });
+                })
+                .fail(function() {
+                    alert("Errore durante l'aggiunta al carrello.");
                 });
         });
     });
 </script>
-

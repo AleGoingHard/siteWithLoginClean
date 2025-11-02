@@ -18,11 +18,10 @@ namespace sitoAutenticazioneFrau.Controllers
             _userManager = userManager;
         }
 
+        [Authorize]
         public async Task<IActionResult> Index()
         {
             var user = await _userManager.GetUserAsync(User);
-            if (user == null) return RedirectToPage("/Identity/Account/Login");
-
             var items = await _context.CartItems
                 .Include(c => c.Product)
                 .Where(c => c.UserId == user.Id)
@@ -30,6 +29,8 @@ namespace sitoAutenticazioneFrau.Controllers
 
             return View(items);
         }
+
+        
         [Authorize]
         [HttpPost]
         public async Task<IActionResult> AddToCart(int productId, int quantity)
@@ -71,7 +72,6 @@ namespace sitoAutenticazioneFrau.Controllers
         public async Task<IActionResult> RemoveFromCart(int id)
         {
             var user = await _userManager.GetUserAsync(User);
-            if (user == null) return RedirectToPage("/Identity/Account/Login");
 
             var item = await _context.CartItems.FindAsync(id);
             if (item != null && item.UserId == user.Id)

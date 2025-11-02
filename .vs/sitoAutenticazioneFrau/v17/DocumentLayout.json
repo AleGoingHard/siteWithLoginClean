@@ -1,0 +1,381 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Progetti\\sitoAutenticazioneFrau\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|c:\\progetti\\sitoautenticazionefrau\\sitoautenticazionefrau\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|solutionrelative:sitoautenticazionefrau\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|c:\\progetti\\sitoautenticazionefrau\\sitoautenticazionefrau\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|solutionrelative:sitoautenticazionefrau\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|c:\\progetti\\sitoautenticazionefrau\\sitoautenticazionefrau\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|solutionrelative:sitoautenticazionefrau\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|c:\\progetti\\sitoautenticazionefrau\\sitoautenticazionefrau\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|solutionrelative:sitoautenticazionefrau\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|c:\\progetti\\sitoautenticazionefrau\\sitoautenticazionefrau\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|solutionrelative:sitoautenticazionefrau\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|c:\\progetti\\sitoautenticazionefrau\\sitoautenticazionefrau\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|solutionrelative:sitoautenticazionefrau\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|c:\\progetti\\sitoautenticazionefrau\\sitoautenticazionefrau\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|solutionrelative:sitoautenticazionefrau\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|c:\\progetti\\sitoautenticazionefrau\\sitoautenticazionefrau\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|solutionrelative:sitoautenticazionefrau\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|c:\\progetti\\sitoautenticazionefrau\\sitoautenticazionefrau\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|solutionrelative:sitoautenticazionefrau\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|c:\\progetti\\sitoautenticazionefrau\\sitoautenticazionefrau\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|solutionrelative:sitoautenticazionefrau\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|c:\\progetti\\sitoautenticazionefrau\\sitoautenticazionefrau\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|solutionrelative:sitoautenticazionefrau\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|c:\\progetti\\sitoautenticazionefrau\\sitoautenticazionefrau\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|solutionrelative:sitoautenticazionefrau\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|c:\\progetti\\sitoautenticazionefrau\\sitoautenticazionefrau\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|solutionrelative:sitoautenticazionefrau\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|c:\\progetti\\sitoautenticazionefrau\\sitoautenticazionefrau\\models\\stripesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|solutionrelative:sitoautenticazionefrau\\models\\stripesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|c:\\progetti\\sitoautenticazionefrau\\sitoautenticazionefrau\\models\\useractionlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|solutionrelative:sitoautenticazionefrau\\models\\useractionlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|c:\\progetti\\sitoautenticazionefrau\\sitoautenticazionefrau\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|solutionrelative:sitoautenticazionefrau\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|c:\\progetti\\sitoautenticazionefrau\\sitoautenticazionefrau\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|solutionrelative:sitoautenticazionefrau\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|c:\\progetti\\sitoautenticazionefrau\\sitoautenticazionefrau\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|solutionrelative:sitoautenticazionefrau\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|c:\\progetti\\sitoautenticazionefrau\\sitoautenticazionefrau\\data\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|solutionrelative:sitoautenticazionefrau\\data\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|c:\\progetti\\sitoautenticazionefrau\\sitoautenticazionefrau\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|solutionrelative:sitoautenticazionefrau\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|c:\\progetti\\sitoautenticazionefrau\\sitoautenticazionefrau\\data\\migrations\\20251013103142_addstoretables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|solutionrelative:sitoautenticazionefrau\\data\\migrations\\20251013103142_addstoretables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|c:\\progetti\\sitoautenticazionefrau\\sitoautenticazionefrau\\data\\migrations\\20251012162448_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE23DF37-ABD4-4047-B17B-8767FD8DE461}|sitoAutenticazioneFrau\\sitoAutenticazioneFrau.csproj|solutionrelative:sitoautenticazionefrau\\data\\migrations\\20251012162448_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "sitoAutenticazioneFrau\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "sitoAutenticazioneFrau\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-13T13:47:52.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "sitoAutenticazioneFrau\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "sitoAutenticazioneFrau\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAcwDgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T13:46:36.315Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "sitoAutenticazioneFrau\\Views\\Products\\Index.cshtml",
+              "ToolTip": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "sitoAutenticazioneFrau\\Views\\Products\\Index.cshtml",
+              "ViewState": "AgIAABoAAAAAAAAAAADwvzIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-13T13:47:28.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "sitoAutenticazioneFrau\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Controllers\\CartController.cs",
+              "RelativeToolTip": "sitoAutenticazioneFrau\\Controllers\\CartController.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAUwGsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T10:40:19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CheckoutController.cs",
+              "DocumentMoniker": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Controllers\\CheckoutController.cs",
+              "RelativeDocumentMoniker": "sitoAutenticazioneFrau\\Controllers\\CheckoutController.cs",
+              "ToolTip": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Controllers\\CheckoutController.cs",
+              "RelativeToolTip": "sitoAutenticazioneFrau\\Controllers\\CheckoutController.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAcwHEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T13:17:28.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "sitoAutenticazioneFrau\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "sitoAutenticazioneFrau\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-02T10:46:40.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "sitoAutenticazioneFrau\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "sitoAutenticazioneFrau\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T16:09:18.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Program.cs",
+              "RelativeDocumentMoniker": "sitoAutenticazioneFrau\\Program.cs",
+              "ToolTip": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Program.cs",
+              "RelativeToolTip": "sitoAutenticazioneFrau\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T16:08:52.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "sitoAutenticazioneFrau\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "sitoAutenticazioneFrau\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-20T09:13:32.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "sitoAutenticazioneFrau\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "sitoAutenticazioneFrau\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-02T10:08:09.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\appsettings.json",
+              "RelativeDocumentMoniker": "sitoAutenticazioneFrau\\appsettings.json",
+              "ToolTip": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\appsettings.json",
+              "RelativeToolTip": "sitoAutenticazioneFrau\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-12T16:14:45.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "sitoAutenticazioneFrau\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "sitoAutenticazioneFrau\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T13:31:20.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "sitoAutenticazioneFrau\\Models\\Order.cs",
+              "ToolTip": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Models\\Order.cs",
+              "RelativeToolTip": "sitoAutenticazioneFrau\\Models\\Order.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAswCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T13:15:54.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "StripeSettings.cs",
+              "DocumentMoniker": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Models\\StripeSettings.cs",
+              "RelativeDocumentMoniker": "sitoAutenticazioneFrau\\Models\\StripeSettings.cs",
+              "ToolTip": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Models\\StripeSettings.cs",
+              "RelativeToolTip": "sitoAutenticazioneFrau\\Models\\StripeSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T13:35:11.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserActionLog.cs",
+              "DocumentMoniker": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Models\\UserActionLog.cs",
+              "RelativeDocumentMoniker": "sitoAutenticazioneFrau\\Models\\UserActionLog.cs",
+              "ToolTip": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Models\\UserActionLog.cs",
+              "RelativeToolTip": "sitoAutenticazioneFrau\\Models\\UserActionLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T10:25:55.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "sitoAutenticazioneFrau\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "sitoAutenticazioneFrau\\Views\\Cart\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-13T13:50:27.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "sitoAutenticazioneFrau\\Models\\Product.cs",
+              "ToolTip": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Models\\Product.cs",
+              "RelativeToolTip": "sitoAutenticazioneFrau\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T10:24:55.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "sitoAutenticazioneFrau\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "sitoAutenticazioneFrau\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T10:24:01.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "sitoAutenticazioneFrau\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "sitoAutenticazioneFrau\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAE4BAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T09:17:59.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Models\\CartItem.cs",
+              "RelativeDocumentMoniker": "sitoAutenticazioneFrau\\Models\\CartItem.cs",
+              "ToolTip": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Models\\CartItem.cs",
+              "RelativeToolTip": "sitoAutenticazioneFrau\\Models\\CartItem.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T10:25:30.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "20251013103142_AddStoreTables.cs",
+              "DocumentMoniker": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Data\\Migrations\\20251013103142_AddStoreTables.cs",
+              "RelativeDocumentMoniker": "sitoAutenticazioneFrau\\Data\\Migrations\\20251013103142_AddStoreTables.cs",
+              "ToolTip": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Data\\Migrations\\20251013103142_AddStoreTables.cs",
+              "RelativeToolTip": "sitoAutenticazioneFrau\\Data\\Migrations\\20251013103142_AddStoreTables.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T10:31:42.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20251012162448_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Data\\Migrations\\20251012162448_InitialCreate.cs",
+              "RelativeDocumentMoniker": "sitoAutenticazioneFrau\\Data\\Migrations\\20251012162448_InitialCreate.cs",
+              "ToolTip": "C:\\Progetti\\sitoAutenticazioneFrau\\sitoAutenticazioneFrau\\Data\\Migrations\\20251012162448_InitialCreate.cs",
+              "RelativeToolTip": "sitoAutenticazioneFrau\\Data\\Migrations\\20251012162448_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T16:24:48.859Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

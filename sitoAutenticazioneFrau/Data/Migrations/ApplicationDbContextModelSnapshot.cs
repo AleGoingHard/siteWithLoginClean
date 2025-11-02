@@ -327,6 +327,41 @@ namespace sitoAutenticazioneFrau.Data.Migrations
                             Description = "Camicia bianca elegante in cotone",
                             Name = "Camicia Classica",
                             Price = 49.99m
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Description = "Pantaloni classici neri in tessuto premium",
+                            Name = "Pantaloni Eleganti",
+                            Price = 79.90m
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Description = "Giacca slim fit in lana, ideale per occasioni formali",
+                            Name = "Giacca Sartoriale",
+                            Price = 149.00m
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Description = "Abito blu navy in tessuto raffinato con chiusura a due bottoni",
+                            Name = "Abito Completo",
+                            Price = 199.90m
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Description = "Cintura elegante in vera pelle italiana",
+                            Name = "Cintura in Pelle",
+                            Price = 39.50m
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Description = "Scarpe stringate eleganti in pelle lucida",
+                            Name = "Scarpe Oxford",
+                            Price = 129.90m
                         });
                 });
 

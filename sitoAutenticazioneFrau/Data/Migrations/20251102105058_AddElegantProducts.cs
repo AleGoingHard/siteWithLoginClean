@@ -7,7 +7,7 @@
 namespace sitoAutenticazioneFrau.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class UpdateProductSeed : Migration
+    public partial class AddElegantProducts : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
